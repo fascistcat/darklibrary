@@ -1,0 +1,55 @@
+body,html{
+	padding: 10px;
+	background-color: #E4E4E4;
+	background-image: url("../imagens/login.jpg");
+	background-size: cover;
+}
+.Login{
+	margin-top: 25%;
+	margin-left: 5%;
+	width: 80%;
+}
+
+.erroLogin {
+	color: red;
+	text-align: justify;
+}
+
+@font-face {
+    font-family: awesome;
+    src: url(font.woff);
+}
+
+#header {
+	font-size: 50px;
+	text-shadow: 0em 0.1em 0.2em black;
+}
+
+#nameHeader {
+	font: Ubuntu, Arial, Tahoma, Sans-serif;
+}
+
+#formSegment {
+	background-color: rgba(0,0,0,0.6);
+}
+
+#opcoes {
+	padding: 10px;
+	width: 80%;
+	margin-top: 35%;
+	margin-left: 5%;
+}
+
+@-webkit-keyframes spaceboots {
+    0% 		{ -webkit-transform: translate(2px, 1px) rotate(0deg); 		}
+    10% 	{ -webkit-transform: translate(-1px, -2px) rotate(-1deg); 	}
+    20% 	{ -webkit-transform: translate(-3px, 0px) rotate(1deg); 	}
+    30% 	{ -webkit-transform: translate(0px, 2px) rotate(0deg); 		}
+    40% 	{ -webkit-transform: translate(1px, -1px) rotate(1deg); 	}
+    50% 	{ -webkit-transform: translate(-1px, 2px) rotate(-1deg); 	}
+    60% 	{ -webkit-transform: translate(-3px, 1px) rotate(0deg); 	}
+    70% 	{ -webkit-transform: translate(2px, 1px) rotate(-1deg); 	}
+    80% 	{ -webkit-transform: translate(-1px, -1px) rotate(1deg); 	}
+    90% 	{ -webkit-transform: translate(2px, 2px) rotate(0deg); 		}
+    100%	{ -webkit-transform: translate(1px, -2px) rotate(-1deg); 	}
+}
