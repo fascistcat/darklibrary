@@ -1,6 +1,9 @@
 <?php
 if (!defined(INCL_FILE)) die('HTTP/1.0 403 Forbidden');
 
+// Prevents cookies from being used by Javascript.
+ini_set('session.cookie_httponly', 1);
+
 // Loads required credentials for the system execution
 $credentialsDir = __DIR__ . '/credentials.json';
 
@@ -11,9 +14,6 @@ if (file_exists($credentialsDir)) {
 	die('There was a problem trying to run Dark Libray: Credentials file not found.');
 }
 unset($credentialsDir);
-
-// Active environment
-$def_environment = $def_cred->env;
 
 // Stores connections used in active record operations
 $connection = array();
