@@ -14,10 +14,10 @@ final class ConnectionFactory {
 	static function getConnection($env = null) {
 		global $connection;
 
-		// Sets $def_environment from config.php as default environment
+		// Sets $def_cred->env from config.php as default environment
 		if (empty($env)) {
-			global $def_environment;
-			$env = $def_environment;
+			global $def_cred->env;
+			$env = $def_cred->env;
 		}
 
 		// Does not create connection if it was already created
