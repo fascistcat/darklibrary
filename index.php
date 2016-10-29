@@ -1,6 +1,7 @@
 <?php
+$def_currentTab = 'home';
 define('INCL_FILE', 'true');
-require_once "autoload.php";
+require_once "construct.php";
 
 echo "Hi :D";
 ?>
